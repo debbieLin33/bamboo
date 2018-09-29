@@ -1,3 +1,4 @@
+///<reference path="../../../node_modules/@angular/platform-browser/animations/src/module.d.ts"/>
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -7,7 +8,9 @@ import {
   MatButtonToggleModule,
   MatRippleModule,
   MatSidenavModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatMenuModule,
+  MatListModule
 } from '@angular/material';
 
 @NgModule({
@@ -15,14 +18,16 @@ import {
     CommonModule
   ],
   declarations: [],
-  exports:[
-  	MatSidenavModule,
-  	BrowserAnimationsModule,
-  	MatToolbarModule,
-  	MatIconModule,
-  	MatButtonModule,
-  	MatButtonToggleModule,
-  	MatRippleModule
+  exports: [
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatRippleModule,
+    MatMenuModule,
+    MatListModule
   ]
 })
 export class NgMaterialModule { }
